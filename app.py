@@ -41,7 +41,7 @@ uploaded_file = st.file_uploader('choose an image of the invoice..',type=['jpg',
 image=''
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
-    st.image(image, caption='Uploaded image', use_column_width=True)
+    st.image(image, caption='Uploaded image', use_container_width=True)
     
 submit = st.button('Fetch info')
 
